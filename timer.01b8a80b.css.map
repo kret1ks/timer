@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["timer.01b8a80b.css","src/style.css"],"sourcesContent":[".active {\n  color: red;\n}\n/*# sourceMappingURL=timer.01b8a80b.css.map */\n",".active{\r\n    color: red;\r\n}"],"names":[],"version":3,"file":"timer.01b8a80b.css.map"}
