@@ -33,7 +33,7 @@ btnRef.addEventListener("click", () => {
     }, 1000)
 })
 
-stopRef.addEventListener("click", (event) => {
+stopRef.addEventListener("click", () => {
     clearInterval(id)
     id = null;
 })
