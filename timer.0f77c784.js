@@ -725,14 +725,15 @@ btnRef.addEventListener("click", ()=>{
     id = setInterval(()=>{
         s--;
         outPutRef.textContent = s;
+        if (s === 30) alert("\u0417\u0430\u043B\u0438\u0448\u0438\u043B\u043E\u0441\u044C 30 \u0441\u0435\u043A\u0443\u043D\u0434 (\u0445\u0432\u0438\u043B\u0438\u043D)");
+        if (s === 0) {
+            clearInterval(id);
+            id = null;
+            alert("\u0427\u0430\u0441 \u0432\u0438\u0439\u0448\u043E\u0432!!!");
+        }
     }, 1000);
-    if (s === 30) alert("\u0437\u0430\u043B\u0438\u0448\u0438\u043B\u043E\u0441\u044C 30 \u0441\u0435\u043A\u0443\u043D\u0434");
-    if (s === 0) {
-        clearInterval(id);
-        alert("\u0447\u0430\u0441 \u0432\u0438\u0439\u0448\u043E\u0432!!!");
-    }
 });
-stopRef.addEventListener("click", (event)=>{
+stopRef.addEventListener("click", ()=>{
     clearInterval(id);
     id = null;
 });
