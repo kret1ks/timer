@@ -15,20 +15,22 @@ let id = null;
 
 
 btnRef.addEventListener("click", () => {
-if(id) return;    
+    if(id) return;     
 
-id = setInterval(() => {
-s--;
-outPutRef.textContent = s
-},1000)
+    id = setInterval(() => {
+        s--;
+        outPutRef.textContent = s;
 
-if(s === 30){
-    alert("залишилось 30 секунд")
-}
-if(s === 0){
-    clearInterval(id)
-    alert("час вийшов!!!")
-}
+        if(s === 30){
+            alert("Залишилось 30 секунд (хвилин)");
+        }
+
+        if(s === 0){
+            clearInterval(id);
+            id = null;
+            alert("Час вийшов!!!");
+        }
+    }, 1000)
 })
 
 stopRef.addEventListener("click", (event) => {
